@@ -1,6 +1,8 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -8,8 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-/* navbare */
+/* AHMED's PART */
 nav {
     display: flex;
     gap: 500px;
@@ -36,7 +37,6 @@ a {
 nav a {
     color: #6D48E5;
 }
-
 .links a {
     color: #6B7782;
 }
@@ -93,3 +93,76 @@ nav section button {
 .farticle .programmes img {
     width: 150px;
 }
+
+
+
+/* AMAL PART */
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.better {
+    padding-top: 5vh;
+    text-align: center;
+    width: 50vw;
+}
+
+.dynamic {
+    display: flex;
+    gap: 3vw;
+}
+
+.charts,
+.mobile {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3,
+h2 {
+    padding-bottom: 3vh;
+}
+
+.better p {
+    color: gray;
+    line-height: 4vh;
+}
+
+.charts p {
+    color: gray;
+    line-height: 4vh;
+}
+
+.analytics p {
+    color: gray;
+    line-height: 4vh;
+}
+
+a {
+    padding-top: 3vh;
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+
+.a::after {
+    content: '';
+    position: absolute;
+    background: gray;
+    width: 3vw;
+    height: 1px;
+    top: 6vh;
+    left: 0;
+}
+
+.analytics {
+    display: flex;
+    gap: 3vw;
+}
+
