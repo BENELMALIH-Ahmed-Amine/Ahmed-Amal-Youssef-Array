@@ -166,3 +166,53 @@ a {
     gap: 3vw;
 }
 
+.Boost{
+    background-color: #6d48e5;
+    height: 400px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    color: white;
+    width: 100vw;
+
+
+
+}
+.work h2, p{
+    color: white;
+  
+}
+.template a{
+    color: white;
+}
+.highter1, .highter2, .highter3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3vh;
+    color: white;
+
+
+}
+.numbers{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.template a::after{
+    content: '';
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 16.5vw;
+    height: 1px;
+    top: 6vh;
+    left: 0;
+}
+.bold{
+    font-size: 65px;
+    font-weight: bold;
+}
