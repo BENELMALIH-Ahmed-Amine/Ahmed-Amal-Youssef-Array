@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 /* AHMED's PART */
 nav {
     display: flex;
@@ -37,6 +38,7 @@ a {
 nav a {
     color: #6D48E5;
 }
+
 .links a {
     color: #6B7782;
 }
@@ -47,38 +49,39 @@ nav section button {
     color: #fff;
     font-size: 12px;
     font-weight: 500;
+    border-radius: 3px;
     padding: 7px 10px 7px 10px;
 }
 
 
 
 /* farticle */
-.farticle {
+article{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 35px;
-    padding-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
-.farticle .multi,
-.farticle .multi div {
+.farticle img {
+    width: 800px;
+}
+
+.better div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.farticle section img {
-    width: 800px;
-}
-
-.farticle .multi div h2 {
-    font-size: 35px;
-}
-
-.farticle .multi div p {
+.better div p {
+    text-align: center;
     color: #6B7782;
     font-size: 18px;
+    width: 700px;
+    padding-bottom: 20px;
 }
 
 .farticle section button {
@@ -87,11 +90,54 @@ nav section button {
     color: #fff;
     font-size: 12px;
     font-weight: 500;
-    padding: 9px 30px 9px 30px;
+    border-radius: 3px;
+    padding: 12px 40px 12px 40px;
+}
+
+.farticle .programmes {
+    display: flex;
+    justify-content: center;
 }
 
 .farticle .programmes img {
     width: 150px;
+}
+
+
+
+/* sarticle */
+.sarticle {
+    background-color: #F6F6FD;
+    gap: 70px;
+}
+
+.sarticle .featrures {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.featrures div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featrures div i {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.featrures div h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.featrures div p {
+    color: #8181B2;
+    text-align: center;
 }
 
 
@@ -106,7 +152,6 @@ nav section button {
 }
 
 .better {
-    padding-top: 5vh;
     text-align: center;
     width: 50vw;
 }
@@ -122,11 +167,7 @@ nav section button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-h3,
-h2 {
-    padding-bottom: 3vh;
+    gap: 3vh;
 }
 
 .better p {
@@ -144,7 +185,7 @@ h2 {
     line-height: 4vh;
 }
 
-a {
+.a {
     padding-top: 3vh;
     text-decoration: none;
     color: gray;
@@ -172,6 +213,58 @@ a {
 
 
 
+.Boost {
+    background-color: #6d48e5;
+    height: 400px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    color: white;
+    width: 100vw;
+}
+
+.work {
+    color: white !important;
+}
+
+.template a {
+    color: white;
+}
+
+.highter1,
+.highter2,
+.highter3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3vh;
+    color: white;
+}
+
+.numbers {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.template a::after {
+    content: '';
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 16.5vw;
+    height: 1px;
+    top: 6vh;
+    left: 0;
+}
+
+.bold {
+    font-size: 65px;
+    font-weight: bold;
+}
 
 @media (max-width:767px){
     .article {
@@ -240,8 +333,8 @@ a {
         background: gray;
         width: 13vw;
         height: 1px;
-        top: 3vh;
-        left: 118px;
+        top: 6vh;
+        left: 128px;
     }
     .analytics{
         display: flex;
@@ -252,7 +345,42 @@ a {
     .mobile{
         margin-bottom: 20vh;
     }
+    .better div p {
+        text-align: center;
+        color: #6B7782;
+        font-size: 18px;
+        width: 80vw;
+        padding-bottom: 20px;
+    }
+    .sarticle{
+        display: flex;
+        flex-direction: column;
+    }
+    .featrures {
+        display: flex;
+        flex-direction: column;
+    }
+    .sarticle .featrures {
+        width: unset;
+        display: flex;
+        flex-wrap: unset;
+    }
+    .numbers{
+        display: flex;
+        flex-direction: column;
+    }
+    .Boost {
+        height: 660px;
+    }
+    .template a::after {
+        content: '';
+        position: absolute;
+        background: rgb(255, 255, 255);
+        width: 55vw;
+        height: 1px;
+        top: 3vh;
+        left: 0;
+    }
     
     
 }
-
