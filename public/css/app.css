@@ -97,7 +97,7 @@ nav section button {
 
 
 /* AMAL PART */
-article {
+.article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,5 +164,95 @@ a {
 .analytics {
     display: flex;
     gap: 3vw;
+}
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+    }
+    .farticle img{
+        width: 330px;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+    }
+    .farticle .multi div h2,  .better h2, .charts h3 {
+        font-size: 20px;
+    }
+    .farticle .multi div p,  .better p .charts p{
+        color: #6B7782;
+        font-size: 10px;
+        width: 80vw;
+        text-align: center;
+        line-height: 17px;
+    }
+    h3, h2 {
+        padding-bottom: unset;
+    }
+    .farticle .programmes img {
+        width: 150px;
+    }
+    .programmes{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .better, .charts, .mobile {
+        padding-top: 5vh;
+        text-align: center;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .dynamic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .charts{
+        text-align: center;
+        width: 80vw;
+    }
+    a {
+        padding-top: unset;
+        position: relative;
+    }
+    .a::after {
+        content: '';
+        position: absolute;
+        background: gray;
+        width: 13vw;
+        height: 1px;
+        top: 3vh;
+        left: 118px;
+    }
+    .analytics{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile{
+        margin-bottom: 20vh;
+    }
+    
+    
 }
 
