@@ -273,6 +273,41 @@ article {
         width: 330px;
     }
 
+    nav {
+        gap: 300px;
+        position: relative;
+    }
+
+    nav section .links {
+        display: none;
+    }
+
+    .mlinks {
+        display: flex;
+        gap: 70px;
+        padding: 20px;
+        position: absolute;
+        left: -600px;
+    }
+
+    .mobile_menu {
+        padding-top: 5px;
+    }
+    
+    .mlinks a {
+        color: #000;
+        
+    }
+    
+    #mlinks {
+        display: none;
+    }
+    
+    #mlinks:checked+.mlinks {
+        top: 70px;
+        left: -20px;
+    }
+
     article {
         display: flex;
         flex-direction: column;
