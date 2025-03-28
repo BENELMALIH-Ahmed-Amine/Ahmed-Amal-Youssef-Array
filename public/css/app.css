@@ -196,7 +196,7 @@ article {
     content: '';
     position: absolute;
     background: gray;
-    width: 6vw;
+    width: 3.5vw;
     height: 1px;
     top: 6vh;
     left: 0;
@@ -217,7 +217,7 @@ article {
     align-items: center;
     gap: 5vh;
     color: white;
-    width: 100vw;
+    width: 1500px;
 }
 
 .work {
@@ -258,6 +258,124 @@ article {
 .bold {
     font-size: 65px;
     font-weight: bold;
+}
+
+/* last_article */
+.last_article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 100px 100px 130px;
+    gap: 50px;
+}
+
+.last_article section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.last_article section .divparent {
+    display: flex;
+    gap: 30px;
+}
+
+.divparent .divchild {
+    width: 280px;
+}
+
+.divparent .divchild h5 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.divparent .divchild p {
+    font-size: 14px;
+}
+
+/* footer */
+footer, footer section, footer .start div, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #F6F6FD;
+    width: 1500px;
+    padding: 70px 0 10px 0;
+    gap: 50px;
+}    
+
+/* 
+    start
+*/
+footer .start {
+    gap: 25px;
+}
+
+.start .first_start h5 {
+    font-size: 12px;
+    color: #CBBFBB;
+}
+
+.start .first_start p {
+    font-size: 22px;
+    width: 500px;
+    text-align: center;
+}
+
+.start .second_start form {
+    gap: 10px;
+}
+
+.start .second_start form input {
+    border: 1px solid #6D48E5;
+    padding: 12px 120px 12px 30px;
+    font-size: 10px;
+}
+
+.start .second_start form button {
+    border: none;
+    background-color: #6D48E5;
+    font-size: 10px;
+    color: #fff;
+    padding: 12px 110px 12px 110px;
+}
+
+.start .second_start p {
+    font-size: 10px;
+    color: #CBBFBB;
+    padding-top: 10px;
+}
+
+/* 
+    foot
+*/
+footer .foot {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 350px;
+}
+
+footer .foot p {
+    padding-left: 20px;
+}
+
+footer .foot div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+/* responsivity */
+.mlinks, label, label+input {
+    display: none;
 }
 
 @media (max-width:767px) {
